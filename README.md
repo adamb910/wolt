@@ -15,3 +15,8 @@ Routes are defined in the routes.py module. Routes could also be a separate fold
 
 ### API routes
 The routes themselves are quite straight forward, I had one main design standard in mind when creating them, and that is the CRUD design of a typical REST API. Because of this, User objects can be accessed via GET /users, if an email query param is added, it is filtered to users with that given email. DELETE, POST and PUT are implemented similarly as POST /users/, PUT /users/{id} and DELETE /users/{id}
+
+## Tests
+
+Unit tests for the business logic was added (User service, Message service) as this was the main body of code.
+There could be additional levels of testing, but at this size this is the extent I feel necessary.
